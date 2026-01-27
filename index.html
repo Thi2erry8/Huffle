@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,10 @@
       type="image/x-icon"
       sizes="96x96"
     />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>Advanced Homepage - Hufie | devChallenges.io</title>
 
     <!--You are welcome to delete these styles or modify them in your own stylesheet -->
@@ -116,11 +119,38 @@
     Buttons
     -->
 
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div>
+    <main>
+      <header>
+        <div class="logo">
+          <img src="./resources/full-logo@2x.png" alt="logo" />
+        </div>
+        <div class="nav">
+          <button><p>Log In</p></button>
+          <button><p>Sign Up</p></button>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="left">
+          <div class="version">
+            <i class="ri-contrast-drop-2-fill"></i>
+            <p>version 4.0.1</p>
+          </div>
+          <h1 class="hero_title">Where data and creativity come together.</h1>
+
+          <p>
+            The fastest way to build and deploy websites with resusable
+            components.
+          </p>
+
+          <div class="">
+            <button><p>Get Started</p></button>
+            <button><p>View Demo</p></button>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./resources/hero-image.png" alt="" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
