@@ -30,18 +30,20 @@
         box-sizing: border-box;
       }
       body {
-        font-family: "Sora";
+        font-family: "Sora", sans-serif;
       }
       button {
         border: none;
         background-color: inherit;
         font-size: 0.9em;
         font-weight: 600;
+        color: inherit;
       }
       section {
         height: 100vh;
         width: 100%;
         padding: 0px 32px;
+        overflow: hidden;
       }
       header {
         height: 70px;
@@ -71,6 +73,9 @@
         .left {
           display: flex;
           flex-direction: column;
+          color: #364153;
+          justify-content: center;
+          gap: 3em;
 
           .version {
             display: flex;
@@ -93,6 +98,56 @@
               font-size: 0.7em;
               font-weight: 700;
             }
+          }
+          .hero_title {
+            font-size: 3.2em;
+          }
+          .hero_text {
+            font-size: 1em;
+          }
+          .hero_btn_container {
+          }
+          .hero_btn {
+            font-size: 1.1em;
+            padding: 8px 16px;
+            border-radius: 25px;
+          }
+          .hero_btn:nth-child(1) {
+            background-color: #295e48;
+            color: #f6f7fb;
+          }
+        }
+        .right {
+          height: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .option {
+        background-image: url("./resources/section_bg_2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #161739;
+
+        .option_text {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 30%;
+          justify-content: center;
+          align-items: center;
+          gap: 1em;
+
+          h1 {
+            color: #f6f7fb;
+            width: 30%;
+            text-align: center;
+          }
+          p {
+            color: #c9d0da;
           }
         }
       }
@@ -196,18 +251,30 @@
           </div>
           <h1 class="hero_title">Where data and creativity come together.</h1>
 
-          <p>
+          <p class="hero_text">
             The fastest way to build and deploy websites with resusable
             components.
           </p>
 
           <div class="">
-            <button><p>Get Started</p></button>
-            <button><p>View Demo</p></button>
+            <button class="hero_btn"><p>Get Started</p></button>
+            <button class="hero_btn"><p>View Demo</p></button>
           </div>
         </div>
         <div class="right">
           <img src="./resources/hero-image.png" alt="" />
+        </div>
+      </section>
+      <section class="option">
+        <div class="option_text">
+          <h1>This is new creative process</h1>
+          <p>Quisque eleifend velit vel erat fringilla interdum</p>
+        </div>
+        <div class="option_container">
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
         </div>
       </section>
     </main>
