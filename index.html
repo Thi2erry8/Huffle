@@ -45,6 +45,9 @@
         padding: 0px 32px;
         overflow: hidden;
       }
+      li {
+        list-style: none;
+      }
       header {
         height: 70px;
         display: flex;
@@ -192,15 +195,54 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        color: #364153;
 
-        .left .right {
+        .left,
+        .right {
           width: 50%;
         }
-        .right {
+        .left {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        .right {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          gap: 1.5em;
+        }
+        li {
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          align-items: center;
+          gap: 1em;
+        }
+      }
+
+      footer {
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #161739;
+        color: #c9d0da;
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.6em;
+        }
+        div:nth-child(1) {
+          justify-content: space-between;
+          width: 40%;
+          height: 70%;
+          align-items: start;
         }
       }
     </style>
@@ -379,11 +421,170 @@
           <img src="./resources/section-1@2x.png" alt="image_1" />
         </div>
         <div class="right">
-          <p>🎨</p>
-          <h2></h2>
-          <p></p>
+          <p
+            style="
+              background-color: #6281f7;
+              border-radius: 25px;
+              padding: 8px;
+              font-size: 1.6em;
+            "
+          >
+            🎨
+          </p>
+          <h2 style="font-size: 2.4em">200+ cloneable components</h2>
+          <p>
+            From navigation bars to modals, buttons to forms, our library has
+            everything you need to jumpstart your development process.
+          </p>
+          <ul>
+            <li>
+              <i
+                style="color: #5db082; font-size: 1.8em"
+                class="ri-checkbox-circle-fill"
+              ></i>
+              <p>Rapidly build your own design system</p>
+            </li>
+
+            <li>
+              <i
+                style="color: #5db082; font-size: 1.8em"
+                class="ri-checkbox-circle-fill"
+              ></i>
+              <p>Maintain consistancy across your website</p>
+            </li>
+
+            <li>
+              <i
+                style="color: #5db082; font-size: 1.8em"
+                class="ri-checkbox-circle-fill"
+              ></i>
+              <p>Save hours in production time</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--  #2 -->
+      <section style="flex-direction: row-reverse" class="presentation">
+        <div class="left">
+          <img src="./resources/section-2@2x.png" alt="image_1" />
+        </div>
+        <div class="right">
+          <p
+            style="
+              background-color: #f5c044;
+              border-radius: 25px;
+              padding: 8px;
+              font-size: 1.6em;
+            "
+          >
+            🎯
+          </p>
+          <h2 style="font-size: 2.4em">Complete style guild for projects</h2>
+          <p>
+            A comprehensive style guide can make all the difference in creating
+            a cohesive and effective design.
+          </p>
+          <ul>
+            <li>
+              <i
+                style="color: #5db082; font-size: 1.8em"
+                class="ri-checkbox-circle-fill"
+              ></i>
+              <p>Determine the key elements of your brand</p>
+            </li>
+
+            <li>
+              <i
+                style="color: #5db082; font-size: 1.8em"
+                class="ri-checkbox-circle-fill"
+              ></i>
+              <p>Include guidelines for layout</p>
+            </li>
+
+            <li>
+              <i
+                style="color: #5db082; font-size: 1.8em"
+                class="ri-checkbox-circle-fill"
+              ></i>
+              <p>Share your style guide with your team</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- #3 -->
+
+      <section class="presentation">
+        <div class="left">
+          <img src="./resources/section-3@2x.png" alt="image_1" />
+        </div>
+        <div class="right">
+          <p
+            style="
+              background-color: #6d4ae5;
+              border-radius: 25px;
+              padding: 8px;
+              font-size: 1.6em;
+            "
+          >
+            ⚙️
+          </p>
+          <h2 style="font-size: 2.4em">Built in multiple ways</h2>
+          <p>
+            Our approach to content creation allows you to build your content in
+            multiple ways, maximizing your efficiency and output.
+          </p>
+          <ul>
+            <li>
+              <i
+                style="color: #5db082; font-size: 1.8em"
+                class="ri-checkbox-circle-fill"
+              ></i>
+              <p>Identify the core message of your content</p>
+            </li>
+
+            <li>
+              <i
+                style="color: #5db082; font-size: 1.8em"
+                class="ri-checkbox-circle-fill"
+              ></i>
+              <p>Create a content calendar</p>
+            </li>
+
+            <li>
+              <i
+                style="color: #5db082; font-size: 1.8em"
+                class="ri-checkbox-circle-fill"
+              ></i>
+              <p>Repurpose your content by adapting</p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="">
+        <h1>
+          Always with the legendary customer
+          <span style="color: #295e48">experience.</span>
+        </h1>
+        <img src="./resources/full-logo.svg" alt="" />
+      </div>
+
+      <div class="">
+        <p>Overview</p>
+        <p>Glossary</p>
+        <p>FAQ</p>
+        <p>Style Guide</p>
+      </div>
+
+      <div class="">
+        <p>Colours</p>
+        <p>Typography</p>
+        <p>Shadow</p>
+        <p>Avatar</p>
+        <p>Buttons</p>
+      </div>
+    </footer>
   </body>
 </html>
